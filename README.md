@@ -1,5 +1,5 @@
-## PendoPageContainer
-[My widget description]
+## Native Navigation Tracker
+A widget for Mendix Native apps that fires an event whenever the page its on comes into focus. It can be used for page tracking by placing it on a page layout, or for a page event that fires whenever a page comes into focus.
 
 ## Features
 [feature highlights]

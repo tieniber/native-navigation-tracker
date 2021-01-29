@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.nativenavtracker.NativeNavTracker" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Nav Tracker</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="onFocusAction" type="action" required="true">
+                <caption>Focus Action</caption>
+                <description>This action will fire any time the page comes into focus (i.e., when it becomes the active page)</description>
+            </property>
+            <property key="pageNameAttr" type="attribute" required="false">
+                <caption>Page Name Attribute</caption>
+                <description>This attribute will be updated with the current page name.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

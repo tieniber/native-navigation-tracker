@@ -1,0 +1,30 @@
+{
+  "name": "native-navigation-tracker",
+  "widgetName": "NativeNavTracker",
+  "version": "1.0.0",
+  "description": "Drop this widget on a page (or page layout) and it will fire logic when the page comes into focus.",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Eric",
+  "config": {
+    "widgetPath": "/Volumes/[C] Windows 10/Mendix/Mindbody/PendoTest-main//widgets",
+    "projectPath": "/Volumes/[C] Windows 10/Mendix/Mindbody/PendoTest-main//"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:native",
+    "dev": "pluggable-widgets-tools start:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Eric/pendopagecontainer/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.10.1"
+  },
+  "dependencies": {}
+}

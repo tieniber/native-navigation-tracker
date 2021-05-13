@@ -31,11 +31,17 @@ class NativeNavTrackerUnwrapped extends Component {
 
     _tryFireAction() {
         const { navigation, onFocusAction, pageNameAttr } = this.props;
-        if (onFocusAction && onFocusAction.canExecute && pageNameAttr && pageNameAttr.status === "available") {
+        if (
+            onFocusAction &&
+            onFocusAction.canExecute &&
+            (!pageNameAttr || (pageNameAttr && pageNameAttr.status === "available"))
+        ) {
             this.setState({
                 shouldFireAction: false
             });
-            pageNameAttr.setValue(navigation.state.params.pageName);
+            if (pageNameAttr) {
+                pageNameAttr.setValue(navigation.state.params.pageName);
+            }
             onFocusAction.execute();
         }
     }
